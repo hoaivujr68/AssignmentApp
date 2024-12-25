@@ -1,0 +1,43 @@
+// User Pages
+
+.app-logo {
+  height: $logo-height;
+  width: $logo-width;
+  background: url('./assets/images/logo-inverse.png');
+}
+
+.app-logo-inverse {
+  height: $logo-height;
+  width: $logo-width;
+  background: url('./assets/images/logo.png');
+}
+
+.app-login-box {
+  width: 65%;
+  .app-logo {
+    margin-bottom: $layout-spacer-lg;
+  }
+
+  h4 {
+    margin-bottom: $layout-spacer-x;
+    font-weight: normal;
+
+    div {
+      opacity: .6;
+    }
+
+    span {
+      font-size: $font-size-lg;
+    }
+  }
+}
+
+.right-content {
+  width: 45%;
+  background-image: url("./assets/static/images/Truoc_C1.png");
+  height: 100vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

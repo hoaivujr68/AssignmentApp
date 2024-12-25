@@ -1,0 +1,52 @@
+#sidebarV2 {
+    .ant-menu {
+      background: transparent !important;
+      border: none !important;
+      width: 95%;
+    }
+    .ant-menu-item {
+      color: rgb(241, 236, 236);
+      transition: none !important;
+      &:active {
+        color: #344767;
+        background-color: #fff;
+        box-shadow: 0 20px 27px 0 RGB(0 0 0 / 5%);
+        box-shadow: 0 .25rem .375rem -.0625rem rgba(20,20,20,.12),0 .125rem .25rem -.0625rem rgba(20,20,20,.07);
+        border-radius: 0px 0.5rem 0.5rem 0px !important;
+      }
+    }
+    .ant-menu-submenu-title {
+      color: #d1d1d1;;
+      &:active {
+        background-color: transparent !important;
+      }
+      &:hover {
+        .ant-menu-submenu-arrow {
+            &::before {
+              background: none !important;
+            }
+            &::after {
+              background: none !important;
+            }
+        }
+      }
+    }
+    .ant-menu-item-selected {
+      color: #344767;
+      background-color: #fff;
+      box-shadow: 0 20px 27px 0 RGB(0 0 0 / 5%);
+      box-shadow: 0 .25rem .375rem -.0625rem rgba(20,20,20,.12),0 .125rem .25rem -.0625rem rgba(20,20,20,.07);
+      border-radius: 0px 0.5rem 0.5rem 0px !important;
+      &::after {
+        display: none !important;
+      }
+    }
+    .ant-menu-item:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+    // .ant-menu-submenu-selected {
+    //   .ant-menu-submenu-title {
+    //     font-weight: 600;
+    //   }
+    // }
+  }

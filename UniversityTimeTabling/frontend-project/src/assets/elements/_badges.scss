@@ -1,0 +1,19 @@
+// Badges
+
+@each $color, $value in $theme-colors {
+  .badge-#{$color} {
+    @include badge-variant($value);
+  }
+}
+
+.badge {
+  font-weight: unset;
+  text-transform: unset;
+  padding: 5px 10px;
+  min-width: 65px;
+  color: #ffffff;
+}
+
+.badge-light {
+  background: $white;
+}

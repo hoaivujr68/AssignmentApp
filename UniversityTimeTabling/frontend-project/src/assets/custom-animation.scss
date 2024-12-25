@@ -1,0 +1,40 @@
+.app-header__logo {
+	cursor: pointer;
+	&:hover {
+		.logo-header-sc5 {
+			// animation: left-to-right 3s linear forwards, 3s right-to-left 3s linear forwards;
+		}
+	}
+}
+
+@keyframes left-to-right {
+	20% {
+		transform: translateX(14rem);
+		transition-duration: 1s;
+	}
+
+	100% {
+		transform: translateX(14rem) scaleX(-1);
+	}
+}
+@keyframes right-to-left {
+
+	20% {
+		transform: translateX(0) scaleX(-1);
+		transition-duration: 1s;
+	}
+
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+@keyframes page-enter {
+	0% {
+		opacity: 0;
+	}
+  	100% {
+		opacity: 1;
+		transition: opacity 0.5s ease;
+	}
+}
